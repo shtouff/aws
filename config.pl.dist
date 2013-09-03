@@ -1,0 +1,8 @@
+"logstash-filters" => {
+	"ls-filter-as-01" => "i-xxxxxxxx",
+	"ls-filter-as-02" => "i-yyyyyyyy"
+},
+"workers-mail" => {
+	"worker-mail-as-01" => "i-zzzzzzzz",
+	"worker-mail-as-02" => "i-tttttttt"
+}
