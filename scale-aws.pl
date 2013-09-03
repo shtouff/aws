@@ -19,7 +19,7 @@ sub stop_group
 	
 	foreach ( keys $instances{$group} ) {	
 		$ids .= " " . $instances{$group}{$_};
-		print "will stop instance $_ ($instances{$group}{$_})\n" if defined($opt_verbose)
+		print "will stop instance $_ ($instances{$group}{$_})\n" if defined($opt_verbose);
 	}
 	
 	my $json_result = qx( aws ec2 stop-instances --instance-ids $ids );
@@ -51,7 +51,7 @@ sub start_group
 	
 	foreach ( keys $instances{$group} ) {	
 		$ids .= " " . $instances{$group}{$_};
-		print "will start instance $_ ($instances{$group}{$_})\n";
+		print "will start instance $_ ($instances{$group}{$_})\n" if defined($opt_verbose);
 	}
 	
 	my $json_result = qx( aws ec2 start-instances --instance-ids $ids );
